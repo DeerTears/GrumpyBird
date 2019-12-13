@@ -9,3 +9,6 @@ func _on_ExitButton_pressed() -> void:
 #Dialogue Callbacks
 func _on_QuitDialogue_confirmed() -> void:
 	get_tree().quit()
+
+func _on_TestButton_pressed() -> void:
+	Global.goto_scene("res://scenes/TestLevel.tscn")

@@ -1,5 +1,7 @@
 extends Control
 
+var debug = false
+
 #For the pause menu:
 
 func _process(delta: float) -> void:
@@ -12,3 +14,6 @@ func _process(delta: float) -> void:
 		$Score/Label.text = ("hold it, you've got " + (Global.coinsA - Global.coinsMaxA) as String + " extra, somehow")
 	else:
 		$Score/Label.text = (Global.coinsA as String + " / " + Global.coinsMaxA as String + " Coins")
+
+func debugUpdate():
+	$Debug/Health.text = ("Health: " + Global.health as String)

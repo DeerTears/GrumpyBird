@@ -173,6 +173,14 @@ margin_right = 780.0
 margin_bottom = 470.0
 window_title = "Leave the game?"
 dialog_text = "Are you sure you want to quit?"
+
+[node name="TestButton" type="Button" parent="."]
+margin_left = 1142.96
+margin_top = 667.146
+margin_right = 1267.96
+margin_bottom = 707.146
+text = "Test Level"
 [connection signal="pressed" from="Container/PlayButton" to="." method="_on_PlayButton_pressed"]
 [connection signal="pressed" from="Container/SettingsButton" to="Settings" method="_on_SettingsButton_pressed"]
 [connection signal="pressed" from="Container/ExitButton" to="." method="_on_ExitButton_pressed"]
+[connection signal="pressed" from="TestButton" to="." method="_on_TestButton_pressed"]
